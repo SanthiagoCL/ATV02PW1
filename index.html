@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <!--metadados para SEO e compatibilidade-->
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Recursos em HTML5">
+        <meta name="author" content="Santhiago / Antonio">
+        <title>Página sobre Recursos em HTML5</title>
+    </head>
+    <body>
+        <!--Cabeçalho-->
+        <header>
+            <h1>Explorando recursos em HTML5</h1>
+            <!--Navegaçao com links âncora para diferente seções-->
+            <nav>
+                <a href="#paragrafo">Parágrafo</a>
+                <a href="#listas">Listas</a>
+                <a href="#tabelas">Tabelas</a>
+                <a href="#formulario">Formulário</a>
+                <a href="#midia">Mídia</a>
+            </nav>
+        </header> 
+        
+        <!--Primeira seção: Demonstrar parágrafo e formatação de texto-->
+        <section id="paragrafo">
+            <h2>Parágrafos e Formatação de Textos</h2>
+            <!--um paragrafo-->
+            <p>este é um parágrafos básico, O elemento <code>&lt;p&gt;</code> é usado para criar parágrafos em HTML</p>
+
+        <!-- Texto em negrito ou itálico-->
+        <p><strong>Texto em negrito</strong> pode ser criado com o elemento <code>&lt;strong&gt;</code> ou <code>&lt;b&gt;</code>.</p>
+        <p><em>Texto em itálico</em> pode ser criado o elemento <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>.</p>
+
+        <!-- linha Horizontal-->
+        <hr>
+        <p>Esta linha Horizontal foi criada com o elemento <code>&lt;hr</code>, que é usado para separar seções de conteúdo.</p>
+        </section>
+        <!--Segunda seção: listas ordenadas e listas não ordenadas-->
+
+        <section id="listas">
+            <h2>Listas</h2>
+
+            <!--Listas não ordenadas-->
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <p>A lista acima nao é uma <strong> Lista não ordenada</strong>, criada com <code>&lt;ul&gt;</code> e <code>&lt;le&gt;</code>.</p>
+
+            <!--Lista Ordenada-->
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+            <p>A lista acima é uma <strong> Lista ordenada</strong>, criada com <code>&lt;ol&gt;</code> e <code>&lt;li&gt;</code>.</p>
+        </section>
+        
+        <!--Terceira seção: Tabela básica-->
+        <section id="tabela">
+            <h2>Tabela</h2>
+            <table border="2">
+                <caption>Exemplo de Tabela</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jacques</td>
+                        <td>29</td>
+                        <td>Engenheiro</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>28</td>
+                        <td>Historiadora</td>
+                    </tr>
+                    <tr>
+                        <td>Telma</td>
+                        <td>46</td>
+                        <td>Professora</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Esta tabela é criada com o elemento <code>&lt;Table&gt;</code>. Os cabeçalhos são definidos com <code>&lt;th&gt;</code>e as células com o <code>&lt;td&gt;</code></p>
+        </section>
+
+        <!-- Quarta seção: -->
+        <section id="formulario">
+            <h2>formulário</h2>
+            <form action="#" method="post">
+                <!--Campo de texto-->
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome"><br><br>
+                
+                <!--Campo email-->
+                <label for="email">email</label>
+                <input type="text" name="" id="email"><br><br>
+                
+                <!--Caixa de seleção (checkbox)-->
+                <label for="aceito">aceito os termos!</label>
+                <input type="checkbox" id="aceito" name="aceito"><br><br>
+                
+                <!--Botão de envio-->
+                <input type="submit" value="Enviar">
+            </form>
+            <p>lista de formulario contém diferente tipos de entradas de dados, como <code>&lt;input&gt;</code> e <code>&lt;label&gt;</code>.</p>
+        </section>
+
+        <!--Quinta seção: mídias (imagens e vídeos)-->
+        <section id="midia">
+            <h2>Mídia</h2>
+            
+            <!--Imagem-->
+            <h3>Imagem</h3>
+            <img src="https://th.bing.com/th/id/OIP.lo06zYxO7Uxedv7DZk_2FQHaHa?w=184&h=184&c=7&r=0&o=5&pid=1.7" alt="Vai Cortinas">
+            <p>Esta imagem é inserida com o elemento <code>&lt;img&gt;</code>, que requer o atributo <code>src</code> para caminho da iamgem e <code>alt</code> para a descrição alternativa.</p>
+            
+            <!--Vídeo-->
+            <h3>Vídeo</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M79e5ji-53w?si=QefXiz-xlbS9dsAT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <video controls width="250">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <p>o vídeo acima é incorporado usando elemento <code>&lt;vídeo&gt;</code>e a fonte de vídeo é definida com <code>&lt;source&gt;</code>.</p>
+        </section>
+        
+        <!--Rodapé da página-->
+        <footer>
+            <p>&copy; 2024 - Desenvolvido por Santhiago e Antonio</p>
+        </footer>
+        
+
+    </body>
+    </html>
